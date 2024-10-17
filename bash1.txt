@@ -1,0 +1,79 @@
+touch bash1.txt
+
+
+
+cd ~
+
+
+
+pwd >> bash1.txt
+
+
+
+mkdir test1
+
+
+
+cd test1
+
+
+
+touch 1 2 3
+
+
+
+ls >> ../bash1.txt
+
+
+
+cd ~
+
+
+
+mkdir test2
+
+
+
+rmdir test2
+
+
+
+rm test1/2
+
+
+
+mkdir test3
+touch test3/file1 test3/file2
+
+
+
+rmdir test3
+
+
+
+mkdir test4
+
+
+
+mv test1/1 test4/
+mv test1/3 test4/
+
+
+
+echo -e "line\nline\nline" >> test4/1
+
+
+
+cat test4/1 >> bash1.txt
+
+
+
+echo -e "line\nline\nline" >> test4/3
+
+
+
+cat test4/1 test4/3 >> bash1.txt
+
+
+
+echo -e "new line 1\nnew line 2\nnew line 3" > test4/1
